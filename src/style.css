@@ -136,13 +136,51 @@ button:focus {
   opacity: 0.9 !important;
 }
 
+@media (max-width:364px) {
+  .github-update {
+    justify-content: center !important;
+    padding-bottom: 55px !important;
+    margin-bottom: 62px !important;
+  }
+
+  #contact-form {
+    background: rgba(255, 255, 255, 0.08) !important;
+    padding: 20px !important;
+    border-radius: 15px !important;
+    width: 450px !important;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 12px !important;
+    color: white !important;
+    height: 393px !important;
+    margin: -33px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .form-contact {
+    margin: -30px !important;
+    height: 379px !important;
+    padding: 16px !important;
+    margin-bottom: 117px !important;
+
+  }
+
+  .connect-contact {
+    margin-bottom: 117px !important;
+  }
+
+  .project-content{
+    position: relative;
+    bottom: 20px;
+  }
+}
+
 @media (max-width: 520px) {
   .contact-container {
     padding: 41px !important;
     margin: 32px !important;
   }
+
   .form-updated {
-    max-width: 400px !important ;
+    max-width: 400px !important;
     width: 76% !important;
     position: absolute;
     top: 52% !important;
@@ -152,24 +190,49 @@ button:focus {
     padding: 20px;
     border-radius: 10px;
   }
-  .github-update{
-    justify-content: center !important ;
+
+  .github-update {
+    justify-content: center !important;
     padding-bottom: 55px !important;
-    margin-bottom: 47px !important;
+    margin-bottom: 62px !important;
   }
-  .box-gap{
+
+  .box-gap {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap:0px !important;
     flex-wrap: wrap;
     margin-top: 37px;
   }
-  .contact-title{
+
+  .contact-title {
     margin-bottom: 21px !important;
   }
-  .contact-content{
+
+  .contact-content {
     margin-top: -11px !important;
+  }
+
+  .Resume-btn1 {
+    position: "relative";
+    left: "37px"
+  }
+}
+
+@media (max-width: 672px) {
+  .box-gap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px !important;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+  }
+
+  .form-contact {
+
+    margin-bottom: 65px !important;
+    /* background-color: violet; */
   }
 }
 
@@ -595,6 +658,12 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
+}
+
+@media (max-width:520px) {
+  .project-card {
+    margin-bottom: 50px;
+  }
 }
 
 /* --------- */

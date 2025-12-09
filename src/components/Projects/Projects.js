@@ -68,7 +68,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card project-content" >
             <ProjectCard
               imgPath={Airbnbclone}
               isBlog={false}

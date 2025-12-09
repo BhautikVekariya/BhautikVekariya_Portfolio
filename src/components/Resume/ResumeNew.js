@@ -20,10 +20,11 @@ function ResumeNew() {
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
+            className="Resume-btn1"
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px"  }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -36,7 +37,7 @@ function ResumeNew() {
           </Document>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: "center", position: "relative", }}>
           <Button
             variant="primary"
             href={pdf}
