@@ -5,8 +5,8 @@ import Particle from "../Particle";
 import billingSystem from "../../Assets/Projects/billingSystem.png";
 import Airbnbclone from "../../Assets/Projects/Airbnbclone.png";
 import MovieWebsite from "../../Assets/Projects/MovieWebsite.png";
-
-// import chatify from "../../Assets/Projects/chatify.png";
+import animation from "../../Assets/Projects/animation.png"
+import mediasearch from "../../Assets/Projects/mediasearch.png"
 
 import ochi from "../../Assets/Projects/ochi.png";
 import weather from "../../Assets/Projects/weather.png";
@@ -24,16 +24,6 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
-             <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={billingSystem}
-              isBlog={false}
-              title="billingSystem"
-              description="A Billing System is a crucial part of Business transactions, ensuring accurate doucmentation of purchases. It generates invoices or receipts for products or services bought by customers."
-              ghLink="https://github.com/BhautikVekariya/ochidesing"
-              demoLink="https://biling-machine.netlify.app/"
-            />
-          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -45,7 +35,41 @@ function Projects() {
               demoLink="https://movieweb-react.vercel.app/"
             />
           </Col>
-      
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={animation}
+              isBlog={false}
+              title="3d_animation_react"
+              description="This project demonstrates a modern 3D website built using React, Three.js, and GSAP. It features interactive 3D models, smooth camera movements, and timeline-based animations to create an engaging user experience. The goal of this project was to explore creative web development techniques, improve performance optimization for 3D content, and understand how animation libraries can be integrated seamlessly with React. The final result is a visually rich, responsive, and scalable web application inspired by award-winning creative studios."
+              ghLink="https://github.com/BhautikVekariya/3d_animation_react"
+              demoLink="https://3d-animation-react-three.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mediasearch}
+              isBlog={false}
+              title="Redux-Project"
+              description="A simple Media Search web app built using React and Redux Toolkit that allows users to search and view photos, videos, and GIFs in one place. Users can enter keywords to fetch media content from an external API and view results in a clean, responsive layout."
+              ghLink="https://github.com/BhautikVekariya/Redux-project"
+              demoLink="https://mediasearch1.netlify.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={billingSystem}
+              isBlog={false}
+              title="billingSystem"
+              description="A Billing System is a crucial part of Business transactions, ensuring accurate doucmentation of purchases. It generates invoices or receipts for products or services bought by customers."
+              ghLink="https://github.com/BhautikVekariya/ochidesing"
+              demoLink="https://biling-machine.netlify.app/"
+            />
+          </Col>
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ochi}
@@ -64,7 +88,7 @@ function Projects() {
               title="weather app"
               description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
               ghLink="https://github.com/BhautikVekariya/weather-app"
-              demoLink="https://enchanting-speculoos-b35bbf.netlify.app/"              
+              demoLink="https://enchanting-speculoos-b35bbf.netlify.app/"
             />
           </Col>
 
