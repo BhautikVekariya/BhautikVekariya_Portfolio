@@ -5,10 +5,13 @@ import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/Bhautik-Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+pdfjs.GlobalWorkerOptions.workerSrc =
+  `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -18,36 +21,64 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+
+        {/* ===== TOP DOWNLOAD BUTTON ===== */}
+        <Row className="justify-content-center mb-4">
           <Button
             className="Resume-btn1"
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px"  }}
+            style={{ maxWidth: "175px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
         </Row>
 
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+        {/* ===== PDF CENTER (PAGE 1, PAGE 2 BELOW) ===== */}
+        <Row
+          className="resume"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <Document
+              file={pdf}
+              onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+            >
+              {numPages &&
+                Array.from({ length: numPages }, (_, index) => (
+                  <Page
+                    key={index}
+                    pageNumber={index + 1}
+                    scale={width > 786 ? 1.7 : 0.6}
+                    style={{ marginBottom: "30px" }}
+                  />
+                ))}
+            </Document>
+          </div>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative", }}>
+        {/* ===== BOTTOM DOWNLOAD BUTTON (SAME AS TOP) ===== */}
+        <Row className="justify-content-center">
           <Button
+            className="Resume-btn1"
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+           style={{ maxWidth: "175px", marginBottom: "49px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>
         </Row>
+
       </Container>
     </div>
   );

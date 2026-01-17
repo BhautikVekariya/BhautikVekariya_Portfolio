@@ -7,7 +7,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "center", lineHeight: "1.7" }}>
-            <strong style={{ fontSize: "1.4rem"}} >Hi, I’m <span style={{color: "#c66df0" }}>  Bhautik Vekariya</span></strong>
+            <strong style={{ fontSize: "1.4rem"}} >Hello, I’m <span style={{color: "#c66df0" }}>  Bhautik Vekariya</span></strong>
             <br /><br />
 
             I’m a passionate Full Stack Developer skilled in
