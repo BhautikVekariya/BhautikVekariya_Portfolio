@@ -40,7 +40,7 @@ Thank you!
 ## 🚀 Built With
 
 My personal portfolio website  
-👉 **https://bportfolio-nu.vercel.app/**  
+👉 **https://bhautikvekariya.netlify.app/**  
 It showcases my projects, skills, resume, and contact details.
 
 This application is built using:
