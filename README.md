@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v1.0 <br/>
-  <a href="https://bportfolio-nu.vercel.app/" target="_blank">bhautik-portfolio.netlify.app</a>
+  <a href="https://bhautikvekariya.netlify.app/" target="_blank">bhautik-portfolio.netlify.app</a>
 </h2>
 
 <div align="center">
