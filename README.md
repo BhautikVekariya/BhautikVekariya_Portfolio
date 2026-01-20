@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v1.0 <br/>
-  <a href="https://bhautikvekariya.netlify.app/" target="_blank">bhautik-portfolio.netlify.app</a>
+  <a href="https://bhautikvekariyaportfolio.netlify.app/" target="_blank">bhautik-portfolio.netlify.app</a>
 </h2>
 
 <div align="center">
@@ -32,7 +32,7 @@
 
 You are free to clone or fork this project and customize it.  
 If you use this template, please give credit by linking back to  
-👉 **[BhautikVekariya](https://github.com/BhautikVekariya/Bportfolio)**  
+👉 **https://github.com/BhautikVekariya/BhautikVekariya_Portfolio**  
 Thank you!
 
 ---
@@ -40,7 +40,7 @@ Thank you!
 ## 🚀 Built With
 
 My personal portfolio website  
-👉 **https://bhautikvekariya.netlify.app/**  
+👉 **https://bhautikvekariyaportfolio.netlify.app/**  
 It showcases my projects, skills, resume, and contact details.
 
 This application is built using:
