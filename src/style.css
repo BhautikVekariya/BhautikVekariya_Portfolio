@@ -787,11 +787,12 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
   /* background-color: red; */
 }
 
 .react-pdf__Page {
-  margin-bottom: 30px;
+  margin-top: 30px;
   /* background-color: red; */
   /* background: white; */
 }
