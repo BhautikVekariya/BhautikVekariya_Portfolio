@@ -32,7 +32,7 @@
 
 You are free to clone or fork this project and customize it.  
 If you use this template, please give credit by linking back to  
-👉 **[BhautikVekariya](https://github.com/BhautikVekariya/Bportfolio)**  
+👉 **https://github.com/BhautikVekariya/Bportfolio**  
 Thank you!
 
 ---
