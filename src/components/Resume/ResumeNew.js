@@ -57,7 +57,7 @@ function ResumeNew() {
                   <Page
                     key={index}
                     pageNumber={index + 1}
-                    scale={width > 786 ? 1.7 : 0.6}
+                    scale={width > 1200 ? 1.3 : width > 768 ? 1 : 0.6}
                     style={{ marginBottom: "30px" }}
                   />
                 ))}

@@ -576,6 +576,7 @@ button:focus {
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
+  /* margin-bottom: -31px !important; */
 }
 
 .project-card-view {
@@ -729,64 +730,38 @@ button:focus {
 }
 
 
-/* ================= ROOT VARIABLES ================= */
-
-html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
-  --imp-text-color: #c770f0;
-}
-
-/* ================= GLOBAL BUTTON SAFETY ================= */
-
-button,
-.btn,
-.btn-primary {
-  pointer-events: auto !important;
-  cursor: pointer !important;
-}
-
-/* ================= PARTICLE FIX (IMPORTANT) ================= */
-
-/* Particle canvas should NEVER block clicks */
-#tsparticles,
-canvas {
-  pointer-events: none !important;
-}
 
 /* ================= RESUME SECTION ================= */
 
 .resume-section {
   position: relative !important;
-  z-index: 2 !important; /* above particles */
+  z-index: 1 !important;
+  overflow: hidden !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+  /* background-color: red; */
 }
 
-/* Keep rows above particle */
 .resume-section .row {
   position: relative !important;
-  z-index: 5 !important;
+  z-index: 2 !important;
 }
 
-/* Resume container */
 .resume {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  position: relative !important;
+  z-index: 2 !important;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
 }
 
-/* ================= DOWNLOAD BUTTON (FIXED) ================= */
+/* ================= DOWNLOAD BUTTON ================= */
 
 .Resume-btn1 {
   position: relative !important;
-  z-index: 999 !important; /* 🔑 MOST IMPORTANT */
+  z-index: 10 !important;
   display: inline-flex !important;
   align-items: center !important;
   gap: 6px;
@@ -795,7 +770,6 @@ canvas {
   color: #fff !important;
   padding: 0.6rem 1.4rem !important;
   border-radius: 6px !important;
-  text-decoration: none !important;
   transition: all 0.3s ease !important;
 }
 
@@ -805,32 +779,52 @@ canvas {
   transform: translateY(-2px);
 }
 
-/* ================= PDF CENTER FIX ================= */
+/* ================= REACT PDF FIX ================= */
 
 .react-pdf__Document {
+  /* position: relative !important; */
+  z-index: 2 !important;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: red; */
 }
 
 .react-pdf__Page {
   margin-bottom: 30px;
-  background: white;
+  /* background-color: red; */
+  /* background: white; */
 }
 
 .react-pdf__Page canvas {
+  position: relative !important;
+  z-index: 0 !important;
   max-width: 100% !important;
   height: auto !important;
 }
 
+
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
   .resume-section {
     padding-top: 80px !important;
+    /* background-color: red; */
   }
 
   .Resume-btn1 {
-    font-size: 0.95rem !important;
+    font-size: 1rem !important;
+  }
+  .footer{
+    z-index: 20;
+  }
+  .justify-content-center{
+    margin-bottom: 17%;
+  }
+}
+
+@media(min-width:700px){
+  .footer{
+    z-index: 20;
   }
 }
