@@ -7,7 +7,7 @@ import Airbnbclone from "../../Assets/Projects/Airbnbclone.png";
 import MovieWebsite from "../../Assets/Projects/MovieWebsite.png";
 import animation from "../../Assets/Projects/animation.png"
 import mediasearch from "../../Assets/Projects/mediasearch.png"
-
+import obys from "../../Assets/Projects/obys-agency.png"
 import ochi from "../../Assets/Projects/ochi.png";
 import weather from "../../Assets/Projects/weather.png";
 
@@ -44,6 +44,17 @@ function Projects() {
               description="This project demonstrates a modern 3D website built using React, Three.js, and GSAP. It features interactive 3D models, smooth camera movements, and timeline-based animations to create an engaging user experience. The goal of this project was to explore creative web development techniques, improve performance optimization for 3D content, and understand how animation libraries can be integrated seamlessly with React. The final result is a visually rich, responsive, and scalable web application inspired by award-winning creative studios."
               ghLink="https://github.com/BhautikVekariya/3d_animation_react"
               demoLink="https://3d-animation-react-three.vercel.app/"
+            />
+          </Col>
+
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={obys}
+              isBlog={false}
+              title="obys-agency"
+              description="A fully responsive agency-style website built using GSAP, Three.js, Shery.js, and Locomotive Scroll. The project focuses on smooth scrolling, advanced animations, WebGL effects, and interactive UI elements to deliver a modern, high-performance user experience across all devices."
+              ghLink="https://github.com/BhautikVekariya/obys-agency"
+              demoLink="https://obysagencypro.netlify.app/"
             />
           </Col>
 
